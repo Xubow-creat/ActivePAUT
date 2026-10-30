@@ -1,0 +1,49 @@
+{
+  "material": {
+    "name": "Steel",
+    "density_kg_m3": 7800.0,
+    "longitudinal_speed_m_s": 5850.0,
+    "shear_speed_m_s": 3220.0
+  },
+  "boundaries": {
+    "top": {"kind": "air", "thickness_mm": 0.0},
+    "bottom": {"kind": "absorbing", "thickness_mm": 8.0},
+    "left": {"kind": "absorbing", "thickness_mm": 2.0},
+    "right": {"kind": "absorbing", "thickness_mm": 2.0}
+  },
+  "source": {
+    "center_frequency_hz": 1000000.0,
+    "amplitude_pa": 1000000.0,
+    "cycles": 2.0,
+    "aperture_mm": 2.0,
+    "center_x_mm": 10.0,
+    "receiver_offset_mm": 0.0,
+    "element_count": 16,
+    "element_width_mm": 0.4,
+    "kerf_mm": 0.1,
+    "steering_angle_deg": 0.0,
+    "focus_depth_mm": 10.0,
+    "transmit_apodization": "hann",
+    "receive_apodization": "hann",
+    "polarization": "normal",
+    "transmit_active_elements": [],
+    "receive_active_elements": []
+  },
+  "defect": {
+    "enabled": true,
+    "center_x_mm": 10.0,
+    "center_y_mm": 10.0,
+    "radius_mm": 1.0
+  },
+  "numerics": {
+    "width_mm": 20.0,
+    "height_mm": 20.0,
+    "duration_us": 7.0,
+    "points_per_wavelength": 12,
+    "max_frequency_factor": 2.0,
+    "cfl": 0.45,
+    "backend": "cupy",
+    "record_snapshots": true,
+    "snapshot_count": 120
+  }
+}

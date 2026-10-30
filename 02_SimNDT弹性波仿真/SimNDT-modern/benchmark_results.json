@@ -1,0 +1,57 @@
+[
+  {
+    "backend": "numpy",
+    "runtime_s": 0.05782280000130413,
+    "receiver_peak_pa": 616653.375,
+    "field_peak_m_s": 0.0060634431429207325,
+    "grid": [
+      76,
+      76
+    ],
+    "steps": 461
+  },
+  {
+    "backend": "numba",
+    "runtime_s": 0.056931400002213195,
+    "receiver_peak_pa": 616653.375,
+    "field_peak_m_s": 0.0060634431429207325,
+    "grid": [
+      76,
+      76
+    ],
+    "steps": 461
+  },
+  {
+    "backend": "cython",
+    "runtime_s": 0.05690619999950286,
+    "receiver_peak_pa": 616653.375,
+    "field_peak_m_s": 0.0060634431429207325,
+    "grid": [
+      76,
+      76
+    ],
+    "steps": 461
+  },
+  {
+    "backend": "opencl",
+    "runtime_s": 0.05754769999839482,
+    "receiver_peak_pa": 616653.375,
+    "field_peak_m_s": 0.0060634431429207325,
+    "grid": [
+      76,
+      76
+    ],
+    "steps": 461
+  },
+  {
+    "backend": "cupy",
+    "runtime_s": 0.4636836999998195,
+    "receiver_peak_pa": 616653.3125,
+    "field_peak_m_s": 0.0060634431429207325,
+    "grid": [
+      76,
+      76
+    ],
+    "steps": 461
+  }
+]

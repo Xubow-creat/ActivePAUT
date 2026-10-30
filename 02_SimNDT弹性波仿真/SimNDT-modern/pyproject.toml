@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=75", "wheel", "Cython>=3.1", "numpy>=2.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simndt-modern"
+version = "2.0.0"
+description = "Physically verified 2-D P-SV phased-array ultrasonic NDT simulator"
+readme = "README_zh.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.14",
+  "matplotlib>=3.9",
+  "Pillow>=11",
+  "PySide6>=6.8",
+  "pyopencl>=2025.1",
+]
+
+[project.optional-dependencies]
+accelerators = ["numba>=0.61", "cupy-cuda13x[ctk]>=14.0", "Cython>=3.1"]
+test = ["pytest>=8", "pytest-qt>=4.4"]
+
+[project.scripts]
+simndt-modern = "simndt_modern.cli:main"
+simndt-modern-gui = "simndt_modern.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
