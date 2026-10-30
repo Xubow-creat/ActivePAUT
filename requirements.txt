@@ -1,0 +1,4 @@
+# Core (fast forward model, particle belief, EIG planner, analysis, figures)
+numpy>=2.0
+matplotlib>=3.9
+numba>=0.61        # optional, speeds up SMC kernels

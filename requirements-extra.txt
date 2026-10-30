@@ -1,0 +1,7 @@
+# Only needed for specific scripts
+scipy>=1.14        # arim, check_c3_* (use the .venv_arim environment)
+h5py>=3.10         # arim I/O
+pillow>=11         # figure assembly
+torch>=2.5         # train_dl_baseline.py / eval_dl_baseline.py (CNN baseline)
+mlx>=0.29          # hifi_gpu.py: Apple-silicon GPU world generator
+# SimNDT-modern (02_SimNDT弹性波仿真/SimNDT-modern) needs Python >= 3.11, see its pyproject.toml
